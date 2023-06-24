@@ -1,0 +1,193 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #212121;
+    color: #302e2e;
+    
+  }
+  
+  /* Heading styles */
+  h1, h2 {
+    color: #615f5f;
+    margin-bottom: 20px;
+  }
+  
+  /* Container styles */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* About Us page specific styles */
+  .container.about-us {
+    background-color: #161716;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .container.about-us p {
+    color: #615f5f;
+    margin-bottom: 20px;
+  }
+  
+  /* Our Team page specific styles */
+  .container.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .employee {
+    width: calc(33.33% - 20px);
+    margin-bottom: 40px;
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Products page specific styles */
+  .container.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:  space-between;
+  }
+  
+  .container.products div {
+    width: 800px;
+    height: 800x;
+    margin: 20px;
+  }
+  
+  .container.products img {
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+  }
+  .container.products h2 {
+    margin: 10px;
+  }
+  
+  /* Policies page specific styles */
+  .container.policies {
+    background-color: #0c0c0c;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .container.policies h2 {
+    margin-bottom: 10px;
+  }
+
+  .container.policies p {
+    margin-bottom: 10px;
+  }
+
+
+  .container.about-us img {
+    display: block;
+    width: 900px;
+    height: 400px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    
+    transition: box-shadow 0.3s;
+  }
+  
+  .container.about-us img:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  /* Contact Us page specific styles */
+  .container.contact-us {
+    background-color: #161716;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+   
+  }
+
+  .container.contact-us li {
+    color: rgb(111, 112, 112);
+   
+  }
+
+  .container.contact-us h2 {
+    margin: 20px;
+    color: rgb(111, 112, 112);
+   
+  }
+  
+  /* Link styles */
+  a {
+    color: #615f5f;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+/* Navigation bar styles */
+.navbar {
+    background-color:#050505;
+    padding: 10px;
+  }
+  
+  .navbar a {
+    color: #747474;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+  }
+  
+  .navbar a:hover {
+
+    background-color: #004d80;
+  }
+  
+  .navbar a:last-child {
+    margin-right: 0;
+  }
+
+  .map
+  {
+    margin-top: 30px;
+    margin-right: 50%;
+  }
+
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .container.our-team .employee {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .container.our-team .employee {
+      width: 100%;
+    }
+  }
